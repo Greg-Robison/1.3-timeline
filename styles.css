@@ -1,8 +1,84 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: helvetica; arial; sans-serif;
 
+p {
+  font-family: helvetica;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+}
+h2 {
+  font-family: helvetica;
+  color: white;
+  font-weight: bold;
+}
+.rice {
+  display: inline-block;
+  width: 600px;
+  border: 2px solid #8cbee7;
+  border-radius: 4px;
+  background-color: #8cbee7;
+  margin-left: 458px;
+}
+
+.radish {
+  display: inline-block;
+  width: 600px;
+  border: 2px solid #5192c6;
+  border-radius: 4px;
+  background-color: #5192c6;
+  margin-left: 458px;
+}
+.rice::before {
+  content:"";
+  display: flex;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-right-color: #8cbee7;
+  position: relative;
+  left: -10px;
+  margin-left: -8px;
+  top: 5px;
+}
+.radish::before{
+  content:"";
+  display: flex;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-right-color: #5192c6;
+  position: relative;
+  left: -10px;
+  margin-left: -8px;
+  top: 5px;
+}
+
+li > .time1 > span:first-child {
+  display: inline-block;
+  font-family: helvetica;
+  color: #7dbceb;
+  font-size: 45px;
+  margin-left: 242px;
+}
+li > .time1 > span:last-child {
+  font-family: helvetica;
+  color: #bfccd8;
+  font-size: 11px;
+}
+
+li > .time2 > span:first-child {
+  display: inline-block;
+  font-family: helvetica;
+  color: #4d91c8;
+  font-size: 45px;
+  margin-left: 242px
+}
+
+li > .time2 > span:last-child {
+  font-family: helvetica;
+  color: #bfccd8;
+  font-size: 11px;
+}
+
+li {
+  list-style: none;
 }
