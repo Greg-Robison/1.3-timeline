@@ -5,6 +5,88 @@ p {
   font-weight: 300;
   font-size: 15px;
 }
+.timeline {
+  display: inline-block;
+  height: 423px;
+  border-left: 10px solid #bedbf4;
+  margin-left: 395px;
+  margin-top: 55px;
+}
+
+.circle1 {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: #bedbf4;
+  top: 49px;
+  left: 378px;
+}
+.icon1 .fa-mobile {
+  display: block;
+  position: absolute;
+  font-size: 28px;
+  color: white;
+  left: 402px;
+  top: 66px;
+  z-index: 10;
+
+}
+
+.icon2 .fa-desktop {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  left: 397px;
+  top: 288px;
+  z-index: 10;
+
+}
+
+.circle2 {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: #bedbf4;
+  top: 267px;
+  left: 378px;
+}
+
+.inner-circle1 {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: #6ea3d3;
+  top: 59px;
+  left: 388px;
+}
+
+.inner-circle2 {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: #6ea3d3;
+  top: 277px;
+  left: 388px;
+}
+
+.fa {
+display: block;
+position: absolute;
+font-size: 20px;
+color: white;
+top: 21px;
+left: 21px;
+z-index: 10;
+}
 h2 {
   font-family: helvetica;
   color: white;
@@ -16,7 +98,10 @@ h2 {
   border: 2px solid #8cbee7;
   border-radius: 4px;
   background-color: #8cbee7;
-  margin-left: 458px;
+  margin-left: 50px;
+}
+.rice:hover {
+  background-color: #5192c6;
 }
 
 .radish {
@@ -25,7 +110,11 @@ h2 {
   border: 2px solid #5192c6;
   border-radius: 4px;
   background-color: #5192c6;
-  margin-left: 458px;
+  margin-left: 50px;
+}
+
+.radish:hover {
+  background-color: #8cbee7;
 }
 .rice::before {
   content:"";
@@ -52,31 +141,41 @@ h2 {
   top: 5px;
 }
 
-li > .time1 > span:first-child {
+.maintime> .time1 > span:last-child {
   display: inline-block;
+  position: absolute;
   font-family: helvetica;
   color: #7dbceb;
   font-size: 45px;
-  margin-left: 242px;
+  margin-left: -192px;
+  top: 75px;
 }
-li > .time1 > span:last-child {
+.maintime > .time1 > span:first-child {
+  display: block;
+  position: absolute;
   font-family: helvetica;
   color: #bfccd8;
-  font-size: 11px;
+  font-size: 13px;
+  margin-left: -118px;
+  top: 60px;
 }
 
-li > .time2 > span:first-child {
+.maintime2 > .time2 > span:last-child {
   display: inline-block;
+  position: absolute;
   font-family: helvetica;
   color: #4d91c8;
   font-size: 45px;
-  margin-left: 242px
+  margin-left: -192px;
+  top: 290px;
 }
 
-li > .time2 > span:last-child {
+.maintime2 > .time2 > span:first-child {
+  display: block;
   font-family: helvetica;
   color: #bfccd8;
-  font-size: 11px;
+  font-size: 13px;
+  margin-left: -118px;
 }
 
 li {
